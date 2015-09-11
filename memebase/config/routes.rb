@@ -3,6 +3,14 @@ Rails.application.routes.draw do
 
   get '/' => 'home#index'
 
+  get'/home/new' => 'home#new'
+
+  post '/home/create' => 'home#create'
+
+
+
+  delete '/home/:id/delete' => 'home#delete'
+
 
 
 

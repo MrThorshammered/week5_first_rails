@@ -1,1 +1,15 @@
 <h1>I am here</h1>
+
+
+<% @memes.each do |image| %>
+<img src="<%= image.url %>" alt="">
+
+ <button><a src = "/home/<%= image.id %>/delete">Delete</a></button>
+
+
+<% end %>
+
+
+
+
+
